@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eda3b8776e.js" crossorigin="anonymous"></script>
+    <style>
+    .col-3{
+        justify-content: space-between;
+        padding-right: 87px;
+    } 
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="row">
+        <div class="col">
+            <nav class="navbar bg-light">
+                <div class="col-6 container-fluid ms-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://image.shutterstock.com/image-photo/bangkok-thailand-may-14-2016-600w-435629701.jpg"
+                            alt="Bootstrap" width="200" height="100">
+                    </a>
+                </div>
+                <div class="col-3 d-flex">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Post a new photo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <i class="fa-solid fa-image"></i>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 dropdown justify-content-end">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--Fin de Navbar-->
+
+    <!--Transiciones-->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                <i class="fa-solid fa-list"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                <i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+    <!--Fin de Transiciones-->
+
+    <!--Primera Pestaña-->
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+
+            <!--Primeras Fotos-->
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 1969
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/6894436/pexels-photo-6894436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="550px" height="550px">
+                        <p class="card-text">
+                        <h5>204 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 Hours ago
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 2021
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/11718011/pexels-photo-11718011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="550px" height="550px">
+                        <p class="card-text">
+                        <h5>180 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        3 Hours ago
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 1972
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/12140690/pexels-photo-12140690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="550px" height="550px">
+                        <p class="card-text">
+                        <h5>220 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+
+            <!--Segundas Fotos-->
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 1970
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/12582266/pexels-photo-12582266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="550px" height="550px">
+                        <p class="card-text">
+                        <h5>240 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 1975
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/8692343/pexels-photo-8692343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="550px" height="550px">
+                        <p class="card-text">
+                        <h5>260 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 1973
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/13555037/pexels-photo-13555037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="550px" height="550px">
+                        <p class="card-text">
+                        <h5>227 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+            <!--Terceras Fotos-->
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 2019
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/12017891/pexels-photo-12017891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="600px" height="600px">
+                        <p class="card-text">
+                        <h5>440 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 2022
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/12330662/pexels-photo-12330662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="600px" height="600px">
+                        <p class="card-text">
+                        <h5>600 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="card col-6 m-auto">
+                    <div class="card-header bg-white">
+                        Stingray 2017
+                    </div>
+                    <div class="card-body m-auto">
+                        <img class="img-fluid img-thumbnail"
+                            src="https://images.pexels.com/photos/11654278/pexels-photo-11654278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Photo" width="600px" height="600px">
+                        <p class="card-text">
+                        <h5>333 Likes</h5>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        4 Hours ago
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Segunda Pestaña-->
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            <!--Primera Linea-->
+            <div class="row">
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/6894436/pexels-photo-6894436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/11718011/pexels-photo-11718011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/12140690/pexels-photo-12140690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+            </div>
+            <!--Segunda Linea-->
+            <div class="row">
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/12582266/pexels-photo-12582266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/8692343/pexels-photo-8692343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/13555037/pexels-photo-13555037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+            </div>
+            <!--Tercera Linea-->
+            <div class="row">
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/12017891/pexels-photo-12017891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/12330662/pexels-photo-12330662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+                <div class="col" style="width: 450px; height: auto;">
+                    <img class="img-fluid img-thumbnail"
+                        src="https://images.pexels.com/photos/11654278/pexels-photo-11654278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Photo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
